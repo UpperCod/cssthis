@@ -1,0 +1,18 @@
+{
+  "name": "cssthis",
+  "version": "0.0.1",
+  "description": "Cssthis is a simple way to control the CSS of its components",
+  "scripts": {},
+  "author": "Matias Trujillo Olivares",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/UpperCod/cssthis.git"
+  },
+  "devDependencies": {
+    "preact": "^8.2.9",
+    "react": "^16.4.1",
+    "rollup-plugin-buble": "^0.19.2",
+    "rollup-plugin-node-resolve": "^3.3.0"
+  }
+}
