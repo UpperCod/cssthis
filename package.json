@@ -1,6 +1,6 @@
 {
   "name": "cssthis",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "description": "Cssthis is a simple way to control the CSS of its components",
   "scripts": {},
   "author": "Matias Trujillo Olivares",
