@@ -80,7 +80,7 @@ This is achieved through the use of [**csstthis-parse**](https://github.com/uppe
 |---------|------|--------|------|-----|
 | rollup  | rollup-plugin-cssthis | ✅ | [gihub](https://github.com/uppercod/rollup-plugin-cssthis)| [npm](https://www.npmjs.com/package/rollup-plugin-cssthis) |
 | webpack |...| 👷 |...|...|
-| parceljs |...| 👷 |...|...|
+| parceljs |parcel-plugin-cssthis| ✅ |[github](https://github.com/UpperCod/parcel-plugin-cssthis)|[npm](https://www.npmjs.com/package/parcel-plugin-cssthis)|
  
 
 
