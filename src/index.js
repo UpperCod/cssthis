@@ -54,12 +54,22 @@ function style(tag = "div", props = {}) {
                         versions,
                         props.cn
                     );
-                    let style =
+                    let element =
                         document.getElementById(props.cn) ||
                         document.createElement("style");
-                    style.id = props.cn;
-                    style.innerHTML = fns.map(fn => fn(props)).join("\n");
-                    document.head.appendChild(style);
+                    element.id = props.cn;
+                    /**
+                     * the option to preprocess the string entered
+                     * to cssthis is added, to test it in environments
+                     * free of bundle tools.
+                     * It is recommended not to use this option in production.
+                     * since it's just to exemplify the use of CSSTHIs.
+                     * Repeat, do not use the `style.parse` method in production.
+                     */
+                    element.innerHTML = fns
+                        .map(fn => (style.parse ? style.parse(fn) : fn)(props))
+                        .join("\n");
+                    document.head.appendChild(element);
                 }
                 this.setState(props);
             }

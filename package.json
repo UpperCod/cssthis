@@ -1,6 +1,6 @@
 {
   "name": "cssthis",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Cssthis is a simple way to control the CSS of its components",
   "main": "dist/cssthis.js",
   "umd:main": "dist/cssthis.umd.js",
