@@ -2,7 +2,11 @@
 
 Cssthis sé crea para [**Preact**](https://preactjs.com) con el objetivo de protege tus estilos mediante el uso de selectores de clase aleatoria.
 
-La principal diferencia con [**css-modules**](https://github.com/css-modules/css-modules) es que con cssthis no necesitas conocer la clase de raíz, ya que cssthis creará un componente que lo envuelva, similar a lo que hace [**styled-components**.](https://www.styled-components.com/)
+La principal diferencia con [**css-modules**](https://github.com/css-modules/css-modules) es que con cssthis no necesitas conocer la clase de raíz, ya que cssthis creará un componente que lo envuelva, 
+similar a lo que hace [**styled-components**.](https://www.styled-components.com/)
+
+> Si eres impaciente y buscas probar directamente cssthis en el navagador visita este [codesanbox](https://codesandbox.io/s/18n4q5lpm7)
+
 
 ## Ejemplo de componente
 

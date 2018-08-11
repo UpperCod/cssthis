@@ -4,6 +4,8 @@ Cssthis is created for [**Preact**](https://preactjs.com) with the aim of protec
 
 The main difference with [**css-modules**](https://github.com/css-modules/css-modules) is that with cssthis you do not need to know the root class, since cssthis will create a component that will wrap, similar to what it does [**styled-components**](https://www.styled-components.com/).
 
+> If you are impatient and you want to try cssthis directly in the navigator visit this [codesanbox](https://codesandbox.io/s/18n4q5lpm7)
+
 ## Component example
 
 When you call the function **style** inside **cssthis**, a component will be created that wraps the style and that when mounted will print the CSS in the browser.
