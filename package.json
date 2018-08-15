@@ -1,13 +1,13 @@
 {
   "name": "cssthis",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Cssthis is a simple way to control the CSS of its components",
   "main": "dist/cssthis.js",
   "umd:main": "dist/cssthis.umd.js",
   "module": "dist/cssthis.m.js",
   "source": "src/index.js",
   "scripts": {
-    "build" : "microbundle --externals \"preact\""
+    "build": "microbundle --externals 'none'"
   },
   "author": "Matias Trujillo Olivares",
   "license": "ISC",
