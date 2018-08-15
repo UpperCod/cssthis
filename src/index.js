@@ -42,8 +42,7 @@ class Theme extends Component {
 function style(tag = "div", props = {}) {
     let cn = props.cn || createCn("_"),
         versions = [],
-        providers = [],
-        prerender;
+        providers = [];
 
     return fns => {
         fns = [].concat(fns);
@@ -97,7 +96,7 @@ function style(tag = "div", props = {}) {
                 this.print(props);
             }
             componentDidMount() {
-                this.load(props);
+                this.load({ ...props });
             }
             componentWillUnmount() {
                 if (this.disconnect) {
@@ -105,17 +104,13 @@ function style(tag = "div", props = {}) {
                     this.disconnect = false;
                 }
             }
-            static render(callback) {
-                prerender = callback;
-                return this;
-            }
             render(props, state) {
                 return h(props.tag || tag, {
                     ...props,
                     class: props.class
                         ? `${state.cn} ${props.class}`
                         : state.cn,
-                    children: prerender ? prerender(props) : props.children
+                    children: props.children
                 });
             }
         };
