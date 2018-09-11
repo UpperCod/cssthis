@@ -48,6 +48,7 @@ function style(tag = "div", props = {}) {
         fns = [].concat(fns);
         return class extends Component {
             print(props, rewrite) {
+                props.id = "." + props.cn;
                 if (!exist(versions, props.cn) || rewrite) {
                     connect(
                         versions,
@@ -68,6 +69,7 @@ function style(tag = "div", props = {}) {
                     element.innerHTML = fns
                         .map(fn => (style.parse ? style.parse(fn) : fn)(props))
                         .join("\n");
+
                     document.head.appendChild(element);
                 }
                 this.setState(props);
